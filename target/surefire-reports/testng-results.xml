@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-25T21:47:19 IST" name="Surefire suite" finished-at="2026-10-25T21:47:30 IST" duration-ms="10579">
+    <groups>
+    </groups>
+    <test started-at="2026-10-25T21:47:19 IST" name="Surefire test" finished-at="2026-10-25T21:47:30 IST" duration-ms="10579">
+      <class name="com.selenium.FirstSeleniumTest">
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.selenium.FirstSeleniumTest@f0f2775]" started-at="2026-10-25T21:47:19 IST" name="verifyHomePageTitle" finished-at="2026-10-25T21:47:30 IST" duration-ms="10477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+      </class> <!-- com.selenium.FirstSeleniumTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
