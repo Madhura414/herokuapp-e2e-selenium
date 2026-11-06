@@ -14,8 +14,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
 
 public class HyperLinkTest {
 
@@ -40,6 +41,9 @@ public class HyperLinkTest {
 
 
             // 2. Identify hyperlinks excluding footer
+    WebElement element= driver.findElement(By.xpath("//*[text()='A/B Testing']"));
+    element.click();
+    driver.navigate().back();
             List<WebElement> hyperlinks =
                     driver.findElements(By.cssSelector("#content a"));
 
@@ -63,7 +67,6 @@ public class HyperLinkTest {
 
                 System.out.println(url);
             }
-            
 
         } catch (Exception | AssertionError e) {
 
@@ -76,7 +79,6 @@ public class HyperLinkTest {
                     Path.of("screenshot.png"),
                     StandardCopyOption.REPLACE_EXISTING
             );
-        
 
             throw e;
 
